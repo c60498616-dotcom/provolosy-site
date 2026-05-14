@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PROВолосы - Галерея</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#80756d",
+                        "inverse-surface": "#3d2d21",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "primary-container": "#5b4636",
+                        "tertiary-fixed": "#e4e2de",
+                        "surface-bright": "#fff8f5",
+                        "on-primary-fixed": "#28180b",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#ffeadc",
+                        "secondary-fixed": "#f5dddd",
+                        "surface-variant": "#f8decc",
+                        "on-secondary-fixed": "#251819",
+                        "on-secondary-container": "#726060",
+                        "outline-variant": "#d2c4bb",
+                        "surface-container-low": "#fff1e9",
+                        "on-primary-container": "#d2b5a0",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#26190e",
+                        "secondary-container": "#f5dddd",
+                        "tertiary-container": "#4a4a47",
+                        "inverse-primary": "#dfc1ac",
+                        "tertiary": "#333431",
+                        "surface-tint": "#715a49",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#d8c1c1",
+                        "surface-container-highest": "#f8decc",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#fcddc7",
+                        "on-secondary-fixed-variant": "#534343",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "inverse-on-surface": "#ffede2",
+                        "error": "#ba1a1a",
+                        "primary": "#433021",
+                        "primary-fixed-dim": "#dfc1ac",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#bbbab6",
+                        "on-surface-variant": "#4e453e",
+                        "background": "#fff8f5",
+                        "surface-container-high": "#fee3d1",
+                        "on-surface": "#26190e",
+                        "on-primary-fixed-variant": "#574333",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#6b5a5b",
+                        "surface-dim": "#efd5c3",
+                        "surface": "#fff8f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-desktop": "120px",
+                        "element-gap": "16px",
+                        "base": "8px",
+                        "container-padding": "24px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["EB Garamond"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .neo-shadow {
+            box-shadow: 15px 15px 30px rgba(91, 70, 54, 0.08), -15px -15px 30px rgba(255, 255, 255, 0.9);
+        }
+        .neo-recessed {
+            box-shadow: inset 5px 5px 10px rgba(91, 70, 54, 0.05), inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+        }
+        .glass-panel {
+            background: rgba(255, 248, 245, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-surface/80 backdrop-blur-xl shadow-[20px_20px_60px_#d1beae,-20px_-20px_60px_#ffffff] rounded-full mx-auto mt-6 w-[90%] max-w-7xl">
+<div class="font-display-lg text-headline-md text-primary tracking-tight">
+            PROВолосы
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#">Услуги</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Галерея</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#">Стилисты</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#">О нас</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#">Отзывы</a>
+</div>
+<div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-surface-tint transition-colors neo-shadow scale-95 transition-transform duration-200">
+                Записаться
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[160px] pb-section-gap-desktop px-container-padding max-w-7xl mx-auto w-full">
+<!-- Header & Filters -->
+<div class="mb-16 flex flex-col items-center text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-8 hidden md:block">Наши работы</h1>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8 md:hidden">Наши работы</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                Изучите наше портфолио современных, органических преображений волос. Каждая укладка создана с заботой, отражая нашу приверженность естественной красоте и изысканному уходу.
+            </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-8 py-3 rounded-full font-label-md text-label-md text-primary bg-surface neo-recessed transition-all">Все</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface hover:text-primary neo-shadow hover:shadow-sm transition-all">Окрашивание</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface hover:text-primary neo-shadow hover:shadow-sm transition-all">Стрижки</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface hover:text-primary neo-shadow hover:shadow-sm transition-all">Укладка</button>
+</div>
+</div>
+<!-- Masonry Gallery Grid -->
+<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+<!-- Gallery Item 1 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-[3/4] relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated portrait of a woman with softly textured, organic waves in a luminous natural light setting. The hair color is a seamless blend of warm honey and creamy blonde balayage. The overall aesthetic is minimalist and serene, adhering to a high-end wellness salon brand identity with soft shadows and a light, airy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYSnnbjOefJBiSZ9i9QJASP8jq4avRFr7y4KDbWYNNrdDb8EQM39qUt1ec9ClpDd4xuNRYqgS2wm8r0wr060X8NAy3IJoQm-dtzWTRXmD5mvxvwBmnyTvZw4E32WMy60SGEWmHtoS81vDGWsbKm7ov9Ce05JMtw9aUeVnTwt3oKQzUUCVVCb1mwE6fOXebvlbTKFKwtnVnCbvAwp-7-rOedKf26GhDIS6iC6TkBzn1kGQmQxL7U-0ufOg3O6f9vsnvI7rzb5XzZg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Балаяж и волны</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-square relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up view of a sleek, precision bob haircut demonstrating sharp, clean lines. The hair is a deep, rich brunette with subtle glossy reflections indicating optimal hair health. Shot in a brightly lit, modern minimalist studio environment, the image perfectly captures a neomorphic, soft-luxury aesthetic with organic curves and pure lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7anHrip3F3k4rjz5meaCFN9ribqoaoXZTulKvouEhBlWfOhkeYtB2gg66SwUA0ZuVOZPCT44bEItxtHaL8bfNYEWs_Z_K4-JOXM--AE68B9l3BJKeb8_ThDZSmS6BpzZ1_w_lT9Q8cCeOZL6XjztM1l-7-sJeCJ8OYaozQ9zTXysmN5-bp7tP_PAa_t1g61_sKkanGnkaScq_k9GmaftFRSysZmeZkjtTeKdHLRLz7qdru2qLSfCzLpE7u_aUYkEAm-I9j7aS8qw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Идеальный боб</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-[4/5] relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant profile shot of a client featuring a complex, modern updo suitable for a sophisticated event. The styling is soft, loose, and slightly undone to maintain an organic, effortless feel. The ambient lighting is warm and volumetric, enhancing the natural texture of the hair against a clean, off-white background typical of a premium wellness brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwVxMBsZHcVIPEuWwVuC59_1fIbolsNbJ9M_r7JbLTRjOVQNLF9ejHq8nTr9oXvQAXyyywDrxS4iP7bb8whvzIZG0JQhBqmbOh_PrXfJQ8nHKUxcRaYvPeJDnEJVR2gbbMsj7hX1-e7ulaHT87lUvBwt3BfYrx2_l38zWgrhVOe3Q9R88JijY2qOjUo9jPlZvI023Ggp0JWvxP0C_j-G9otPwXA9wvaYfz-rqEglNLgTaruvL5pwXTNVIGOMGxCjXxH6F4AidM_dE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Естественная прическа</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-[3/4] relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A back view of long, cascading hair styled in loose, voluminous neomorphic waves. The color is a natural, dimensional copper that catches the light beautifully. The composition is highly symmetrical and centered within a pristine, airy studio setting, emphasizing the tactile softness and deep health of the hair fibers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSiaYQookC71NF-Q1cE3AqKUQtmRWwqlAhRvrG_-I1c3RsmxR0oZK6pXGfDVwv2l9VEwutOmaPpXrFwyYpC4Q9AGQPeoxoUI4UaggJmy1kNE341ES2xaDi55uCiCKbf6XJbcViMMVDtmlLUB_kcDvcUw4F-8_7tB8r-ACGUBs7pz6uxNfm5HjLGynnPsDDm2ps9LEoaUXFGzpE_8kZBXBl3TxeC-8jQtYm7OhjIFZPx7A4d6RHqepEUTeXlY12F6LwkciPfPT4m6A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Медные волны</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-square relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed, macro-style photograph highlighting the texture of an intricate braid woven into soft, natural hair. The image focuses on the interplay of light and shadow within the braided structure, illustrating a high level of craftsmanship. The overall tone is grounded, organic, and serene, matching the soft cream and coffee visual identity of the salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUrsiYzk0Mqfhb0fPiZi0-hmClW1GglVAFC_YXuf6ibGHf1l2ej_-8wpB9RMlyZbt1tk3Z0M9VtrMR2OtgqdKWfhtDcC7ZgIAiThkkxWXnc5cHDQV36qJphpymvEpn5eqvBuAnGDPJYOSouH384PX1Wo2JUOhAkI-ujL-2AlWZ1yy99DzyW90yTQB0HT0u9fTnJ_NxfIHTaAxWBhqibl7bozQ4vwBbEY8xjpioZwGvGOn05hMfqbEh4s8eVdeZ2RTm-bqeo_QJ6Qg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Сложная укладка</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="break-inside-avoid neo-shadow rounded-xl p-2 bg-surface">
+<div class="rounded-[2.5rem] overflow-hidden aspect-[4/5] relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant shot of a modern, face-framing layered cut with a subtle curtain fringe. The model's hair is a radiant, healthy ash blonde. The styling embraces natural movement and airiness, completely avoiding stiff or overly manicured looks. The background is a soft, blurred wash of light cream, reinforcing the brand's neomorphic, volumetric pillow design language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQuVDthoyqa8jdBULzDASI-EfgjZLWlL8-OVw1cZPD4Yjhq_DGQR7vKjEG81LH2buFeze3fXmrS84m65t0bGKXLwY3i5u4p7i_8z8cx-3J3dLL37QBnspM5A-zI_2nv7PBh2zLuvsJxL1V6ChPPaSfUQkhJP19-IiD7bvuPMEXKmVkpFThgVTZciCM2K9VNyBssDp1eW2rX3MMlLu0Xp0UbBSRZn1Es2ur7rlfHGGFBApZ6Fk6UjFAKhtvd90kwNIs6UF4QijmNzs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="font-label-md text-label-md text-on-primary">Многослойная челка</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More Action -->
+<div class="mt-16 flex justify-center">
+<button class="bg-surface text-primary font-label-md text-label-md px-10 py-4 rounded-full hover:text-primary-container transition-colors neo-shadow active:neo-recessed flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">refresh</span>
+                Загрузить еще стили
+            </button>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-low w-full pt-section-gap-desktop pb-container-padding">
+<div class="flex flex-col md:flex-row justify-between items-center px-container-padding max-w-7xl mx-auto">
+<div class="mb-6 md:mb-0">
+<span class="font-display-lg text-headline-md text-primary">PROВолосы</span>
+</div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Политика конфиденциальности</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Условия использования</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Вакансии</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Связаться с нами</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+                © 2024 PROВолосы Современный Органический Салон. Все права защищены.
+            </div>
+</div>
+</footer>
+</body></html>

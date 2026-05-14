@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>О Нас | PROВолосы Современный Органический Салон</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#80756d",
+                        "inverse-surface": "#3d2d21",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "primary-container": "#5b4636",
+                        "tertiary-fixed": "#e4e2de",
+                        "surface-bright": "#fff8f5",
+                        "on-primary-fixed": "#28180b",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#ffeadc",
+                        "secondary-fixed": "#f5dddd",
+                        "surface-variant": "#f8decc",
+                        "on-secondary-fixed": "#251819",
+                        "on-secondary-container": "#726060",
+                        "outline-variant": "#d2c4bb",
+                        "surface-container-low": "#fff1e9",
+                        "on-primary-container": "#d2b5a0",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#26190e",
+                        "secondary-container": "#f5dddd",
+                        "tertiary-container": "#4a4a47",
+                        "inverse-primary": "#dfc1ac",
+                        "tertiary": "#333431",
+                        "surface-tint": "#715a49",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#d8c1c1",
+                        "surface-container-highest": "#f8decc",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#fcddc7",
+                        "on-secondary-fixed-variant": "#534343",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "inverse-on-surface": "#ffede2",
+                        "error": "#ba1a1a",
+                        "primary": "#433021",
+                        "primary-fixed-dim": "#dfc1ac",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#bbbab6",
+                        "on-surface-variant": "#4e453e",
+                        "background": "#fff8f5",
+                        "surface-container-high": "#fee3d1",
+                        "on-surface": "#26190e",
+                        "on-primary-fixed-variant": "#574333",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#6b5a5b",
+                        "surface-dim": "#efd5c3",
+                        "surface": "#fff8f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-desktop": "120px",
+                        "element-gap": "16px",
+                        "base": "8px",
+                        "container-padding": "24px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["EB Garamond"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Base styles to ensure consistency and custom neomorphic utilities where config falls short purely for standard classes */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Neomorphic Pillows (Approximation using standard Tailwind where JSON exact values aren't provided) */
+        .neo-pillow {
+            box-shadow: 12px 12px 24px theme('colors.surface-dim'), -12px -12px 24px theme('colors.surface-container-lowest');
+        }
+        .neo-pillow:hover {
+            box-shadow: 8px 8px 16px theme('colors.surface-dim'), -8px -8px 16px theme('colors.surface-container-lowest');
+        }
+
+        /* Neomorphic Recessed (Inputs) */
+        .neo-recessed {
+            box-shadow: inset 6px 6px 12px theme('colors.surface-dim'), inset -6px -6px 12px theme('colors.surface-container-lowest');
+            background-color: theme('colors.surface');
+        }
+        .neo-recessed:focus {
+            outline: none;
+            box-shadow: inset 8px 8px 16px theme('colors.surface-dim'), inset -8px -8px 16px theme('colors.surface-container-lowest'), 0 0 0 2px theme('colors.secondary-container');
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 rounded-full mx-auto mt-6 w-[90%] max-w-7xl bg-surface/80 backdrop-blur-xl shadow-[20px_20px_60px_#d1beae,-20px_-20px_60px_#ffffff]">
+<!-- Brand -->
+<div class="font-display-lg text-headline-md text-primary tracking-tight">
+            PROВолосы
+        </div>
+<!-- Desktop Navigation -->
+<ul class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Услуги</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Галерея</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Стилисты</a></li>
+<!-- Active State -->
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 scale-95 transition-transform duration-200" href="#">О нас</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Отзывы</a></li>
+</ul>
+<!-- Action / Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-6 py-2 bg-primary text-on-primary rounded-full font-label-md hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 shadow-md">
+                Записаться
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] md:pt-[160px]">
+<!-- Hero Section: Philosophy -->
+<section class="px-container-padding max-w-7xl mx-auto pb-section-gap-mobile md:pb-section-gap-desktop">
+<div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+<div class="w-full md:w-1/2 space-y-6">
+<h1 class="font-display-lg text-display-lg text-primary">
+                        Уходя корнями в <br/><span class="italic text-surface-tint">Природу.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        В PROВолосы мы верим, что истинная красота берет начало в целостном здоровье. Наша современная органическая философия сочетает в себе чистейшие растительные ингредиенты с передовыми методами укладки, гарантируя, что ваши волосы будут не только выглядеть великолепно, но и чувствовать себя глубоко напитанными.
+                    </p>
+</div>
+<div class="w-full md:w-1/2 relative">
+<!-- Soft organic shape container -->
+<div class="aspect-[4/5] rounded-[4rem] overflow-hidden neo-pillow relative">
+<img alt="Salon Interior" class="w-full h-full object-cover" data-alt="A serene, high-end organic hair salon interior captured in soft, diffused daylight. The scene features smooth, minimalist styling stations crafted from light oak wood and matte cream surfaces. Subtle, volumetric neomorphic shadows define the edges of the mirrors and counters, adhering to a modern light-mode aesthetic. Delicate green botanical accents are visible in the background, reinforcing a calming, wellness-focused atmosphere with a sophisticated palette of soft beiges and warm whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByWKDb2_tfO7mFU0McI9NK5YQFtLt3UXWgufr1XEUUnarO_g4ugAVyCAeCoomUDOzUrI9B1wIgaOV2RKzRfZhS3iDRSqp0fqEu0Od-Jc63CZ6zHtd9FsOZXbh-_fXggtca847qmM8omiCGSyt-hERoGhASVY82cFl4WR68LniwhbzEFDYYGDnSN13trN1rJgyfJEH_HcjSOtJ0Z9cNwkg9NXsvZ-NflwMYg77Ga7A4ot7__srZdw-gCv2_q3Nk4KAvtWs-xSlxqHI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section: Asymmetric Layout -->
+<section class="bg-surface-container-low py-section-gap-mobile md:py-section-gap-desktop">
+<div class="px-container-padding max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5 md:col-start-1 order-2 md:order-1">
+<div class="aspect-square rounded-full overflow-hidden neo-pillow">
+<img alt="Organic Hair Care Treatment" class="w-full h-full object-cover" data-alt="A close-up view of hands gently massaging natural, organic hair oil into healthy, cascading waves of hair. The lighting is soft and flattering, creating a high-key, luminous effect that highlights the texture and shine of the hair. The background is a soft, out-of-focus cream color, emphasizing a minimalist, luxurious wellness aesthetic. The overall mood is deeply relaxing, tactile, and pure, reflecting a premium self-care experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3GwfDxUB2-ivYmBlhgOrxPzjJTfXITh-Dwr8pzApEu-zHymc_C29R9FNqCgcX03hSf2EpxVGNKASgS_1e__CjJVHcwsvDNXObIeXN3gXMAk0fpAaxl6ovUyk7Gb9_MylSj0MfZj6pbzmDUiq9P9vxrUcG_Dpa_s71Dhn3uCAMENh_tVC_F3iKY-1VBMa1Bp8wF0U-K1umX3jf-a2P21N3kVZj2R_j9Vml5a0_iz9lJN0LUjZPODp0_pml1M7kEBQwHDc2QpfH7Ro"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 space-y-6">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">
+                            Алхимия Ухода
+                        </h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>
+                                То, что начиналось как тихий бунт против агрессивных химических процедур, превратилось в заповедник восстанавливающей красоты. Мы получаем наши составы исключительно с устойчивых биодинамических ферм, которые уважают землю так же, как мы уважаем ваши волосы.
+                            </p>
+<p>
+                                Наше пространство спроектировано как неоморфное убежище — тактильная, объемная среда, где острые углы заменены мягкими изгибами и нежными тенями. Здесь вам предлагается глубоко выдохнуть и отдаться процессу, который исцеляет так же, как и украшает.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stylists Section: Bento Grid -->
+<section class="px-container-padding max-w-7xl mx-auto py-section-gap-mobile md:py-section-gap-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Познакомьтесь с нашими мастерами</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Мастера-колористы и специалисты по текстуре, стремящиеся воплотить ваше видение через призму естественной целостности волос.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+<!-- Stylist Card 1 -->
+<div class="bg-surface rounded-xl p-6 neo-pillow flex flex-col items-center text-center transition-transform hover:-translate-y-2 duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mb-6 neo-pillow">
+<img alt="Stylist Portrait" class="w-full h-full object-cover" data-alt="A professional portrait of a female hair stylist in a bright, modern salon setting. She is wearing a minimalist, tailored cream apron over a soft white blouse. The lighting is soft and airy, casting gentle, neomorphic-style shadows that define her facial features without harsh contrast. Her expression is warm, welcoming, and confident, exuding a sense of premium hospitality and expert organic hair care knowledge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE_C0Kcw_6Vy6BOjzuJefvHXq6VPHNMes-D0xqETAOGcZFf2DbU1g0UobD4WR4aW3C-naDDYnk4HaIZqYFx_7iC0KDvzo4Pdgl0mfoMWt2Pzxz3EZdlna5hcYzIaQQMKeSKEdU0oZ8-t9D3zMmqtnowj07vtE2o6iGKfE51WfBCL79RIjGUNcFeystGJ6usbeSI4rIqokP7jYWWdFhyzZl-HCpZ3DXQ4ekL09AaofXi0XfDIqLyMiUBckYYz8Gxq1yGRFj_RWp0fY"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Елена Ростова</h3>
+<p class="font-label-md text-label-md text-tertiary-container uppercase tracking-widest mb-4">Мастер-колорист</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Специализируется на органическом балаяже и растительных цветовых инфузиях.</p>
+</div>
+<!-- Stylist Card 2 (Staggered) -->
+<div class="bg-surface rounded-xl p-6 neo-pillow flex flex-col items-center text-center md:mt-12 transition-transform hover:-translate-y-2 duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mb-6 neo-pillow">
+<img alt="Stylist Portrait" class="w-full h-full object-cover" data-alt="A soft, beautifully lit portrait of a male hair texture specialist. He has a calm, creative demeanor and is dressed in a simple, high-quality earth-toned linen shirt. The background is a beautifully blurred, light beige wall with a subtle gradient, emphasizing a clean, neomorphic light-mode aesthetic. The overall mood is professional, serene, and deeply aligned with natural wellness principles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Rej34H6bQYwRgMHgg4gM7WfyfkZTb2LxnZQYQCaoQDxhX9RfXyf7_fW1hj-fzGOw84h_-w4EvoUx6SCcTAxXIWJKlgZQsc6PwOdgwahbC9wD2OGDgozqkc47hmEUCIbfUDN5GCBryvR4jQzXev-sVyeaZ3FSgV3C5Y5wHLi1akfp7w3M08afDB39EF9oZiGTVmGvA0NZsVyrxZCUj8jgn0vZZWjedIRs9EVsYOSiW21aMdfcRlyW9LHiEKkWNBqljGe0YRK76MI"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Маркус Торн</h3>
+<p class="font-label-md text-label-md text-tertiary-container uppercase tracking-widest mb-4">Директор по текстуре</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Эксперт по естественным локонам и структурным точным стрижкам.</p>
+</div>
+<!-- Stylist Card 3 -->
+<div class="bg-surface rounded-xl p-6 neo-pillow flex flex-col items-center text-center transition-transform hover:-translate-y-2 duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mb-6 neo-pillow">
+<img alt="Stylist Portrait" class="w-full h-full object-cover" data-alt="A portrait of a young female hair wellness expert, smiling warmly in a light-filled organic salon space. She wears a minimalist soft-pink tunic. The environment features gentle curves and soft, diffuse lighting that creates a bright, volumetric neomorphic look with soft highlights and low-opacity shadows. The aesthetic is luxurious, clean, and profoundly comforting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxSsc9wsvfcFuW__CSWxmLaoo_TqexJhJtiXeBMpMO7DAK_T8XK0fvfwvqAbpZ_ZopXTHZFBKRj1K7WmD_kr3aHeD9tOyEcV8UMy43Vyei5P1OecCxziz_s_mo5taC0jvmU_9Wt9jY60nWP4h-GLDJfuqKvsmdxCwm0Ku4vKV4du4O8rhu4Ke7_IWi0c5pku52Bc4SD3FaIuLtOpXUAuY_j_oeOCgC78CSKs01VB19e1ODWB5zbyPz9pQSdvP9LE3v2urmhAMwCzY"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">София Лин</h3>
+<p class="font-label-md text-label-md text-tertiary-container uppercase tracking-widest mb-4">Терапевт по коже головы</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Посвятила себя комплексному здоровью кожи головы и восстанавливающим процедурам.</p>
+</div>
+</div>
+</section>
+<!-- Contact & Booking Section -->
+<section class="bg-surface-container-high py-section-gap-mobile md:py-section-gap-desktop">
+<div class="px-container-padding max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+<!-- Left: Contact Info & Map -->
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Посетите наш заповедник</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Выйдите из шума в пространство, созданное для вашего комфорта.</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                ул. Органическая 124, Офис 300<br/>
+                                Район Безмятежности, SD 90210
+                            </p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">call</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                +1 (555) 123-4567<br/>
+<span class="text-sm opacity-80">Вт - Сб: 9:00 - 19:00</span>
+</p>
+</div>
+<!-- Map Placeholder -->
+<div class="w-full h-64 rounded-2xl overflow-hidden neo-pillow mt-8">
+<img alt="Location Map" class="w-full h-full object-cover opacity-80" data-alt="A stylized, minimalist map view of a city district, rendered in a soft, monochromatic cream and beige color palette. The map lines are gentle and unobtrusive, mimicking a neomorphic style where roads and blocks appear slightly recessed or elevated with soft shadows. A subtle, elegant marker indicates the location of the salon. The overall look is clean, modern, and aligned with a luxurious light-mode UI aesthetic." data-location="Serenity District" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUdUw0Ccm7Yi0J1PwOMJk-sRvMDvshj8BDKDwlRk8ULr71QUB_TOUMrU_uCsk7fogikYFiKRluI5OrlcbiWKuOVbQnpR_EuK8eJAXoAfsaAe8n1usXk95hcS1aU7dNnDpeirPIjMz4IzagHLJfWcgjkPY4SDt9gM6SkePR6t21LJRMqqjgzpSkkPywCfwf-_vfVk87L3Q_ydWLsfd_FnOQYaASQskZjrn_MBDrkUMiTTgDZqwvMzzeyNmIBtKNV33ZhH2Dy34bQ94"/>
+</div>
+</div>
+<!-- Right: Simple Booking Form (Soft UI) -->
+<div class="bg-surface rounded-[2.5rem] p-8 md:p-12 neo-pillow">
+<h3 class="font-headline-md text-headline-md text-primary mb-8">Записаться на прием</h3>
+<form class="space-y-6">
+<!-- Recessed Input Group -->
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary ml-4 block" for="name">Ваше имя</label>
+<input class="w-full h-14 px-6 rounded-full border-none neo-recessed text-on-surface font-body-md placeholder-outline-variant" id="name" placeholder="Анна Иванова" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary ml-4 block" for="email">Адрес электронной почты</label>
+<input class="w-full h-14 px-6 rounded-full border-none neo-recessed text-on-surface font-body-md placeholder-outline-variant" id="email" placeholder="anna@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary ml-4 block" for="service">Желаемая услуга</label>
+<select class="w-full h-14 px-6 rounded-full border-none neo-recessed text-on-surface font-body-md appearance-none" id="service">
+<option class="text-outline-variant" disabled="" selected="" value="">Выберите услугу...</option>
+<option value="cut">Органическая стрижка и укладка</option>
+<option value="color">Растительное окрашивание</option>
+<option value="treatment">Восстанавливающий уход</option>
+</select>
+</div>
+<!-- Neomorphic Submit Button -->
+<div class="pt-4">
+<button class="w-full h-14 rounded-full bg-primary text-on-primary font-label-md text-label-md tracking-wide hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-[8px_8px_16px_#dfc1ac,-8px_-8px_16px_#ffffff] active:shadow-inner" type="submit">
+                                    Отправить заявку
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low w-full pt-section-gap-desktop pb-container-padding flex flex-col md:flex-row justify-between items-center px-container-padding max-w-7xl mx-auto">
+<!-- Brand/Copyright -->
+<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+<span class="font-display-lg text-headline-md text-primary mb-2">PROВолосы</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                © 2024 PROВолосы Современный Органический Салон. Все права защищены.
+            </p>
+</div>
+<!-- Links -->
+<ul class="flex flex-wrap justify-center md:justify-end gap-6 font-body-md text-body-md">
+<li>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Политика конфиденциальности</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Условия использования</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Карьера</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Свяжитесь с нами</a>
+</li>
+</ul>
+</footer>
+</body></html>
