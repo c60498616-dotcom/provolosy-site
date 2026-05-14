@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Отзывы — PROВолосы Воронеж</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline": "#80756d",
+                      "inverse-surface": "#3d2d21",
+                      "on-tertiary-fixed": "#1b1c1a",
+                      "tertiary-fixed-dim": "#c8c6c3",
+                      "primary-container": "#5b4636",
+                      "tertiary-fixed": "#e4e2de",
+                      "surface-bright": "#fff8f5",
+                      "on-primary-fixed": "#28180b",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#ffeadc",
+                      "secondary-fixed": "#f5dddd",
+                      "surface-variant": "#f8decc",
+                      "on-secondary-fixed": "#251819",
+                      "on-secondary-container": "#726060",
+                      "outline-variant": "#d2c4bb",
+                      "surface-container-low": "#fff1e9",
+                      "on-primary-container": "#d2b5a0",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#26190e",
+                      "secondary-container": "#f5dddd",
+                      "tertiary-container": "#4a4a47",
+                      "inverse-primary": "#dfc1ac",
+                      "tertiary": "#333431",
+                      "surface-tint": "#715a49",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#d8c1c1",
+                      "surface-container-highest": "#f8decc",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#fcddc7",
+                      "on-secondary-fixed-variant": "#534343",
+                      "on-tertiary-fixed-variant": "#474744",
+                      "inverse-on-surface": "#ffede2",
+                      "error": "#ba1a1a",
+                      "primary": "#433021",
+                      "primary-fixed-dim": "#dfc1ac",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#bbbab6",
+                      "on-surface-variant": "#4e453e",
+                      "background": "#fff8f5",
+                      "surface-container-high": "#fee3d1",
+                      "on-surface": "#26190e",
+                      "on-primary-fixed-variant": "#574333",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary": "#6b5a5b",
+                      "surface-dim": "#efd5c3",
+                      "surface": "#fff8f5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-desktop": "120px",
+                      "element-gap": "16px",
+                      "base": "8px",
+                      "container-padding": "24px",
+                      "section-gap-mobile": "64px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg": [
+                              "EB Garamond"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "EB Garamond"
+                      ],
+                      "headline-md": [
+                              "EB Garamond"
+                      ],
+                      "headline-lg-mobile": [
+                              "EB Garamond"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Neomorphic Base Shadows */
+        .neo-pillow {
+            box-shadow: 20px 20px 60px #e6dfdb, -20px -20px 60px #ffffff;
+        }
+        .neo-pillow-card {
+            box-shadow: 16px 16px 40px #e6dfdb, -16px -16px 40px #ffffff;
+        }
+        .neo-recessed {
+            box-shadow: inset 8px 8px 16px #e6dfdb, inset -8px -8px 16px #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-surface/80 backdrop-blur-xl rounded-full mx-auto mt-6 w-[90%] max-w-7xl shadow-[20px_20px_60px_#d1beae,-20px_-20px_60px_#ffffff]">
+<div class="font-display-lg text-headline-md text-primary tracking-tight">PROВолосы</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="uslugi.html">Услуги</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="galereya.html">Галерея</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Стилисты</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="o-nas.html">О нас</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="otzyvy.html">Отзывы</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 scale-95 hover:scale-100 shadow-md">
+            Записаться
+        </button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[180px] pb-section-gap-desktop"><!-- REAL_DATA_INJECTED -->
+<section style="max-width:1200px;margin:120px auto 80px;padding:0 24px;font-family:'Plus Jakarta Sans',Arial,sans-serif;">
+  <p style="color:#7b5455;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin:0 0 14px;">Отзывы клиентов</p>
+  <h2 style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:48px;margin:0 0 18px;">Что говорят о PROВолосы</h2>
+  <p style="color:#5a4344;font-size:16px;max-width:720px;line-height:1.7;margin:0 0 36px;">Все отзывы получены с Яндекс.Карт — без фильтра и редакции. Средняя оценка студии — <strong>5,0 из 5</strong> на основе 185+ отзывов.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px;">
+    
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Ольга Малинникова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">26 марта</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Добрый вечер. Сегодня, была в салоне ПроВолосы, город Воронеж, ул. Плехановская 60, делала биозавивку на длинные волосы. Мастер Олеся, выполнила всё быстро, чётко, профессионально. Хороший человек, хороший мастер. Хочу выразить слова благодарности мастеру Олесе, вы делаете людей красивыми, поднимаете настроение, своей работой, результатом. Салон прекрасный, хорошее место расположение, рядом остановка, в салоне уютно, чисто, чай, душевная теплота, короший коллектив. Отдельно спасибо, руководителю данного салона Ольге, за хороших мастеров, мастеров своего дела. Я ушла очень довольной и красивой. Спасибо, ещё раз большое. Хочу пожелать, этому салону процветания, как можно ещё больше клиентов довольных.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Мария Александровна</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">2 апреля</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Была сегодня на стрижке у мастера Виктории. Вы даже не представляете какие у нее ЗОЛОТЫЕ руки! Компетентность этого мастера зашкаливает! Встретит с лучезарной улыбкой, предложит кофе с конфетками. В салоне играет приятная веселая музыка, царит атмосфера добродушия и понимания. Всегда уточнят все самые, даже казалось бы, незначительные детали. Хожу уже не первый раз и возвращаюсь всегда с большим удовольствием! Однозначно рекомендую, если вы ищете приятного, понимающего, опытного мастера! Спасибо огромное!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Мургина Ольга Васильевна</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">22 марта</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Про волосы, вы просто супер! Высококлассные профессионалы! Попала к вам в салон, после неудачного окрашивания в другом салоне. Я была в отчаянии и не знала , как исправить , как мне казалось, неисправимое. Мой мастер Мила выслушала мою проблему, успокоила, заверила что смогут мне помочь. Огромное вам спасибо за моральную поддержку, за реальную помощь и ваш профессионализм!!!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Лариса В.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">22 марта</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Салон выбирала по отзывам в интернете, долго думала куда пойти, опыт был негативный уже. Позвонила не знала к кому записаться , решила будь что будет. Попала к мастеру Елена, большое спасибо за её работу, стрижка на 5+.Расположение салона удобное. Следующая стрижка там же и у того же мастера.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Галина Шарова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">23 ноября 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Делали стрижку и завивку. Четко, бережно, внимательно, профессионально. Мастер Вика, с которым комфортно и помолчать, и поговорить. Я отдохнула в кресле. С удовольствием приду ещё.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Таисия Игнатенко</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">17 февраля 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Неделю как стала обладательницей этих красивущих кудрей!)) Выражаю благодарность прекрасному мастеру Елене за профессионализм, понимание, чуткость и внимательность! Сделали тест прядь, предупредили об особенностях завивки и возможных нюансах в последующей носке, подобрали состав и вуаля!!! Впечатление о салоне очень приятное, угостили чаем, всё очень комфортно и доброжелательно, после подобрали уход для моей новой прически и дали все рекомендации, очень довольна результатом! Рекомендую! Желаю вам успехов и процветания!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Елена Никулина</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">10 марта</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Приятная обстановка. Делала завивку. Всё понравилось. Обсудили состояние волос. Рассказали как ухаживать за моей новой прической. Рекомендую. Отличное место. Вике моя большая благодарность. Видно когда человек умеет и старается! Спасибо!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Ко Мин А</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">21 ноября 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Салон скромный, а профессионалы работают такие, каких в гламурных местах не найдёшь. Два года хожу к мастеру-стилисту Людмиле - это доктор для волос и души) В первое обращение она сделала с моими волосами что-то волшебное! Из пережженой мочалки превратила в нормальные волосы с прекрасным цветом. Всегда выслушает пожелания, пояснит, что хорошо, а что лучше не делать с волосами. С ней не страшны эксперименты, потому что каждый будет подкреплен теорией и богатой практикой. Тут вам точно не навяжут ненужных услуг и не сделают ничего, что навредит.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Юлия</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">31 октября 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Приходила 27.10.2025 года на услугу био завивка, делала ее впервые в жизни и не пожалела. Работа была сделана качественно, на совесть. Всё объяснили, рассказали, расписали по уходу после био завивки. После самостоятельного мытья головы в положенное время, результат меня удивил-все кудри остались в том же положении, с таким же результатом как в первый раз после мастера Приду ещё раз, когда придет время💕💕💕</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Ольга Копытина</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">8 мая</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Прекрасный салон Про волосы! Была там в качестве модели,у девочек золотые ручки, стрижка сделана на высшем уровне! Очень уютная и доброжелательная атмосфера! Особая благодарность руководителю Ольге,спасибо ученице Оксане,буду счастлива попасть в этот салон ещё раз!!!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Марина Юрова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">28 ноября 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Моя постоянная мастер не смогла принять, решила поискать салон, в котором можно будет осветлить корни и обновить тотал блонд, нашла салон Proволосы, удобно расположен у остановки Застава, все сделали довольно быстро, в процессе угостили кофе с конфетками) Результатом довольна, то, что я и хотела, мастер Виктория приятная девушка, буду приходить сюда еще.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Зубкова Надежда</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">7 июня 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Хотела бы выразить благодарность за вашу работу. Была моделью у ученицы Яны, желаю ей успехов, и осталась очень довольна результатом слаженной работы ученицы и мастера. По опыту могу сказать, что у учеников всегда трясутся руки, это нормально🫣🤗, поставте себя на их место, и если вы идёте моделью это надо понимать и запастись Большим терпением! Но мастер наставник Ольга И. контролировала все и перепроверяла каждый срез, поэтому результат меня очень порадовал, я осталась довольна и могу смело рекомендовать. А пока стригли меня, я ещё видела отличную работу другого мастера, уже профессионально. Поэтому могу смело рекомендовать это место в целом! Я лично, ещё туда вернусь!!!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Наталья П.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">17 августа 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">16.08 была моделью у Олеси. Олеся подстригла меня так как я хотела. Мне очень понравилось, молодец девушка))) Спасибо наставнику Ольге Ивановне за таких мастеров!!! Олеся, удачи Вам в работе и побольше благодарных клиентов! Еще записалась на покраску корней)</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">саша Курдюкова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">21 августа 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Хотела бы выразить благодарность. Сегодня была моделью у мастера Олеси. Сразу видно, мастер своего дела. Сделали коррекцию длины. Все было очень аккуратно, результат 🔥 Советую❤</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Миша и Андрей С.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">28 мая 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Была на стрижке у мастера Елены,очень вежливая и приятная девушка, стрижка выполнена отлично, все пожелания клиента полностью учтены, спасибо вам огромное за отличную стрижку, побольше вам благодарных клиентов. 🌹</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Олеся</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">7 июня 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Договорились на удобное для меня время. Местоположение салона удобное. Стрижку выполняла ученица Яна под присмотром мастера. Результат хороший, получилось как и просила. Спасибо за красивую стрижку!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Жанна Елчиева</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">9 августа 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Не в первый раз посещаю данную парикмахерскую. В этот раз попала в качестве модели к начинающему мастеру Олесе. Всё прошло замечательно, результатом полностью довольна, освежила старую стрижку и получила красивую укладку) Процветания вам)</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Роза Кузнецова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">16 сентября 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Была моделью на стрижку. Всё понравились. Постригли отлично под руководством Ольги🥰 Приятный салон и персонал!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Алина Терехова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">10 марта 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">В салон прихожу не в первый раз. В этот раз была на окрашивании у мастера Виктории. Учли мои пожелания, посоветовали, как сделать лучше. Мастер работала быстро и аккуратно. Обязательно вернусь еще. Рекомендую!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">елизавета гончарова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">1 марта</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Отличное место! Здесь бываю не первый раз, у разных мастеров. Сначала красили в блонд, теперь в темный, все на высшем уровне! У мастеров золотые руки! Спасибо за Ваш труд! ❤️</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Олеся Власова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">23 ноября 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Атмосфера очень приятная. Девушка-мастер отлично знает своё дело, сразу предупредила о специфичности стрижки и что её надо будет укладывать, также рассказала чем и как это делать. Определённо советую)</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Евгений К.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">30 апреля</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Салон очень хороший, посещаю регулярно. Мастера опытные и квалифицированные. В салоне очень приятно и уютно. Руководитель салона грамотный и отзывчивый специалист. Мастера Елену возьму в жёны. Все супер. Всем советую!!!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Ангелина Л.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">19 ноября 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Прекрасное место. Достаточно уютная обстановка и хороший сервис. Отдельное спасибо мастеру Виктории - она смогла повторить то, что не могли мастера других салонов уже на протяжении нескольких лет. Результатом очень довольна, приду ещё и другим советую.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Катерина</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">23 августа 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Сегодня посетили Proволосы. Очень уютная обстановка, профессиональный подход мастеров к своему делу. Доброжелательность руководителя на высшем уровне. Дочки мои в восторге от стрижек🤩Огромное спасибо, Ольга Ивановна и начинающий мастер, Галина, за Ваш труд и внимание к деталям. Процветания Вашему салону. С удовольствием посетим Вас ещё 💐В августе посетили ещё раз салон. Спасибо огромное за красивые стрижки. Всё аккуратно и модно. Отдельное спасибо за лайфхак для школы. Очень довольны.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Елена Киселёва</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">30 марта 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Рекомендую к посещению! Очень понравилось. Делала стрижку и окрашивание и Виктории. Замечательный мастер! Результат превзошел мои ожидания. Спасибо!</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Милена Полухина</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">23 ноября 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Сегодня посетила салон ProВолосы. В планах было просто убрать длину, но решилась на популярную челку шторку)) Стриглась у мастера Вика. Все прошло максимально комфортно , очень довольна результатом. Давно мои волосы не выглядели такими живыми🥰</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Арина П.</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">5 июня 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Была сегодня на стрижке у мастера Яны. Все пожелания выполнила, получилось очень красиво и аккуратно. Спасибо большое и желаю вам процветания и много довольных клиентов☺️</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Марина Колосова</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">18 мая 2024</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Много раз обращалась в ProВолосы на стрижки и окрашивания. Уютная атмосфера, профессиональный подход. Никогда не навязывают лишних процедур. Всегда расскажут о домашнем уходе. Очень удобное расположение. Приветливые сотрудники, и, конечно, Ольга Ивановна - великолепный наставник для начинающих талантов.</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Вера Поляковп</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">21 февраля 2025</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★★★★★</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Хочется выразить благодарность мастеру Елене ,стрижка очень понравилась,приятно,что специалист тебя слышит и учитывает пожелания!Благодарю за советы по уходу)</p>
+    </article>
+
+    <article style="background:rgba(255,255,255,.78);border:1px solid rgba(123,84,85,.18);border-radius:24px;padding:28px 30px;backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(212,165,165,.18);display:flex;flex-direction:column;gap:14px;">
+      <header style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:'EB Garamond',Georgia,serif;color:#7b5455;font-size:22px;font-weight:600;line-height:1.2;">Артём Архаров</div>
+          <div style="color:#8c6d6d;font-size:13px;margin-top:4px;">20 апреля</div>
+        </div>
+        <div style="color:#d4a55b;letter-spacing:.12em;font-size:16px;">★☆☆☆☆</div>
+      </header>
+      <p style="color:#3d2e2e;line-height:1.65;font-size:15px;margin:0;">Пришёл постричься, сказал что нужно как стригся в других парикмахерских. Специалист постригла очень коротко. Как будто перепутали насадки. Я был недоволен, деньги за стрижку вернули без вопросов.</p>
+    </article>
+  </div>
+  <p style="margin:36px 0 0;color:#7b5455;opacity:.85;font-size:14px;">Источник: <a style="color:#7b5455;font-weight:700;" href="https://yandex.ru/maps/org/provolosy/123126037039/reviews/">Яндекс.Карты — отзывы PROВолосы</a></p>
+</section>
+<!-- /REAL_DATA_INJECTED --></main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap-desktop pb-container-padding bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-container-padding max-w-7xl mx-auto gap-8">
+<div class="font-display-lg text-headline-md text-primary">PROВолосы</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Политика конфиденциальности</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Условия использования</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Карьера</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Свяжитесь с нами</a>
+</nav>
+<div class="font-body-md text-body-md text-on-surface-variant opacity-80 text-center md:text-right">
+                © 2024 PROВолосы Modern Organic Salon. Все права защищены.
+            </div>
+</div>
+</footer>
+</body></html>
